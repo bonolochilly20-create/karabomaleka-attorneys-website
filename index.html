@@ -2175,10 +2175,15 @@ a.contact__detail-value:hover { color: var(--gold-500); }
           <!-- Contact form -->
           <div class="contact__form-wrap reveal-up reveal-up--delay-1">
             <form
-              class="contact-form"
-              id="contact-form"
-              novalidate
-              aria-label="Contact form"
+  name="contact"
+  method="POST"
+  data-netlify="true"
+  class="contact-form"
+  id="contact-form"
+  novalidate
+  aria-label="Contact form"
+>
+              <input type="hidden" name="form-name" value="contact">
             >
               <div class="form-row">
                 <div class="form-group">
